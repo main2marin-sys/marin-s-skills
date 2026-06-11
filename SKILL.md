@@ -1,6 +1,6 @@
 ---
 name: voc-logistics-judgment
-description: Browser-based logistics VOC evidence collection and objective problem judgment for e-commerce delivery complaints. Use when Codex must collect user voice details from VOC pages, follow same-order related voices, inspect order and logistics fulfillment pages, and classify "未收到货" logistics issues using a stable nine-scenario taxonomy without hard attribution.
+description: Browser-based logistics VOC evidence collection and objective problem judgment for e-commerce delivery complaints. Use when Codex must collect user voice details from VOC pages, follow same-order related voices, inspect order and logistics fulfillment pages, classify "未收到货" logistics issues using a stable nine-scenario taxonomy without hard attribution, or update the installed voc-logistics-judgment skill.
 ---
 
 # VOC Logistics Judgment
@@ -16,6 +16,16 @@ Use this skill to collect logistics-related VOC evidence and judge delivery prob
 - Standardize issue names. Add a new issue only when the evidence reveals a genuinely new scenario.
 - Close browser pages opened for collection after use, especially for batch work.
 - Mask or omit sensitive phone/address details in user-facing summaries.
+
+## Update This Skill
+
+When the user asks to update `voc-logistics-judgment`, run:
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/main2marin-sys/marin-s-skills/main/install.sh)"
+```
+
+This command backs up the existing local skill directory and installs the latest version from GitHub. After updating, tell the user to restart Codex or open a new thread if the updated skill is not picked up immediately.
 
 ## Workflow
 
@@ -77,6 +87,7 @@ Each judged case should include:
 
 - `scripts/browser-voc-collector.mjs`: browser helper functions for VOC, order, and logistics detail collection. Adapt selectors when page layout changes.
 - `scripts/build-not-received-prompt.mjs`: generate a model judgment prompt from collected case JSON using the nine-scenario taxonomy.
+- `scripts/update.sh`: update this skill from GitHub.
 
 ## Browser Notes
 
