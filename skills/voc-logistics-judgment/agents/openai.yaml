@@ -1,0 +1,4 @@
+interface:
+  display_name: "VOC Logistics Judgment"
+  short_description: "采集物流VOC并按九类场景归因"
+  default_prompt: "Use $voc-logistics-judgment to collect logistics VOC evidence and classify not-received delivery cases."
