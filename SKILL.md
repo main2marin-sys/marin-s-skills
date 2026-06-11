@@ -19,6 +19,7 @@ Use this skill to collect logistics-related VOC evidence and judge delivery prob
 
 ## Workflow
 
+0. Run the permission and session check below.
 1. Open the VOC list page.
 2. Select samples according to the user's instruction: random, latest, first N, or full page range. Record the sampling scope.
 3. For each selected VOC:
@@ -32,6 +33,18 @@ Use this skill to collect logistics-related VOC evidence and judge delivery prob
 5. Build a model judgment prompt from the evidence. Rules should only structure facts and propose candidates; model judgment decides with evidence chain.
 6. Validate output against the standard taxonomy in `references/not-received-taxonomy.md`.
 7. Summarize with counts, case table, evidence chain, missing evidence, and caveats.
+
+## Permission And Session Check
+
+Before collecting any browser evidence, verify the user has their own valid login session and page permissions:
+
+1. Ask the user to log in with their own account in the in-app browser if the page redirects to login or shows no permission.
+2. Open the target VOC list URL and confirm the list loads.
+3. Open one VOC detail and confirm `原声信息` is visible.
+4. In that detail, open `订单信息` and confirm order ID/order journey/aftersales records are visible.
+5. Open the logistics detail for the express number and confirm logistics trace, carrier callback text, processed text, and waybill abnormalities are visible.
+
+If any check fails, stop browser collection and report the missing permission scope. Do not bypass access control, reuse another person's session, or ask for cookies/tokens. If the user cannot obtain permission, ask for exported VOC/order/logistics data and run judgment from files instead.
 
 ## Required Evidence Fields
 

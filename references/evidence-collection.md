@@ -1,5 +1,27 @@
 # Evidence Collection Guide
 
+## Permission And Session Check
+
+The skill provides workflow and judgment standards; it does not grant data permissions. Each user must use their own account and session.
+
+Before batch collection:
+
+1. Open the VOC source URL in the in-app browser.
+2. Confirm the VOC list is visible.
+3. Open one VOC detail and confirm `原声信息` is visible.
+4. Open `订单信息` from the VOC detail and confirm order ID, order journey,售后/仲裁 records are visible.
+5. Open logistics detail for one express number and confirm trace operation time, operation event, carrier callback text, processed text, and waybill abnormalities are visible.
+
+If the page shows no permission, empty data caused by permission, or login redirect, do not continue automation. Tell the user which page failed:
+
+- VOC list/detail permission;
+- VOC `原声信息` detail permission;
+- order detail / order journey permission;
+- logistics detail / logistics trace permission;
+-售后/仲裁 record permission.
+
+If permission cannot be granted, collect from exported JSON/CSV/Excel using the fields below.
+
 ## VOC Detail
 
 Collect:
