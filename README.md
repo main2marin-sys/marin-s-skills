@@ -1,8 +1,27 @@
 # VOC Logistics Judgment Skill
 
-This repo installs the `voc-logistics-judgment` Codex skill for browser-based logistics VOC evidence collection and nine-scenario not-received issue judgment.
+This repo is the `voc-logistics-judgment` Codex skill for browser-based logistics VOC evidence collection and nine-scenario not-received issue judgment.
 
-## One-command install
+## Install In Codex
+
+After this repository is pushed to GitHub, colleagues can ask Codex:
+
+```text
+帮我安装 voc-logistics-judgment skill：https://github.com/<owner>/<repo>
+```
+
+The repo root is the skill root, so the installing agent should install path `.` with skill name `voc-logistics-judgment`.
+
+If installing manually with the bundled system installer:
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo <owner>/<repo> \
+  --path . \
+  --name voc-logistics-judgment
+```
+
+## Shell Install Fallback
 
 Replace `<repo-url>` with the Git repository URL:
 
@@ -10,15 +29,7 @@ Replace `<repo-url>` with the Git repository URL:
 tmp_dir="$(mktemp -d)" && git clone <repo-url> "$tmp_dir" && bash "$tmp_dir/install.sh"
 ```
 
-## What It Installs
-
-The installer copies:
-
-```text
-skills/voc-logistics-judgment
-```
-
-to:
+The shell installer copies this repo root to:
 
 ```text
 ${CODEX_HOME:-$HOME/.codex}/skills/voc-logistics-judgment
