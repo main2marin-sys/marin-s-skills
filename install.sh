@@ -3,13 +3,35 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SKILL_NAME="voc-logistics-judgment"
+REPO_ARCHIVE_URL="${REPO_ARCHIVE_URL:-https://github.com/main2marin-sys/marin-s-skills/archive/refs/heads/main.tar.gz}"
 SOURCE_DIR="${SCRIPT_DIR}"
 TARGET_ROOT="${CODEX_HOME:-${HOME}/.codex}/skills"
 TARGET_DIR="${TARGET_ROOT}/${SKILL_NAME}"
 
 if [[ ! -f "${SOURCE_DIR}/SKILL.md" ]]; then
-  echo "Cannot find skill source at repo root: ${SOURCE_DIR}/SKILL.md" >&2
-  exit 1
+  TMP_DIR="$(mktemp -d)"
+  cleanup() {
+    rm -rf "${TMP_DIR}"
+  }
+  trap cleanup EXIT
+
+  ARCHIVE_PATH="${TMP_DIR}/skill.tar.gz"
+  if command -v curl >/dev/null 2>&1; then
+    curl -fsSL "${REPO_ARCHIVE_URL}" -o "${ARCHIVE_PATH}"
+  elif command -v wget >/dev/null 2>&1; then
+    wget -qO "${ARCHIVE_PATH}" "${REPO_ARCHIVE_URL}"
+  else
+    echo "Need curl or wget to download ${REPO_ARCHIVE_URL}" >&2
+    exit 1
+  fi
+
+  tar -xzf "${ARCHIVE_PATH}" -C "${TMP_DIR}"
+  SOURCE_DIR="$(find "${TMP_DIR}" -maxdepth 2 -name SKILL.md -type f -print -quit | xargs dirname)"
+
+  if [[ ! -f "${SOURCE_DIR}/SKILL.md" ]]; then
+    echo "Cannot find SKILL.md in downloaded archive." >&2
+    exit 1
+  fi
 fi
 
 mkdir -p "${TARGET_ROOT}"

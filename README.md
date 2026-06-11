@@ -12,6 +12,16 @@ After this repository is pushed to GitHub, colleagues can ask Codex:
 
 The repo root is the skill root, so the installing agent should install path `.` with skill name `voc-logistics-judgment`.
 
+## One-Command Install Or Update
+
+Use this for both first install and update:
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/main2marin-sys/marin-s-skills/main/install.sh)"
+```
+
+It backs up the existing local skill directory, then installs the latest `main` version.
+
 If installing manually with the bundled system installer:
 
 ```bash
@@ -21,7 +31,7 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
   --name voc-logistics-judgment
 ```
 
-## Shell Install Fallback
+## Clone Install Fallback
 
 Replace `<repo-url>` with the Git repository URL:
 
