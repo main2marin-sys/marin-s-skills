@@ -1,0 +1,6 @@
+interface:
+  display_name: "Business Writing Playbook"
+  short_description: "Write decision-oriented docs, reports, and speeches"
+  default_prompt: "Use $write-business-docs to turn this topic into a decision-oriented document, report, or speech."
+policy:
+  allow_implicit_invocation: true

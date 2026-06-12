@@ -2,6 +2,8 @@
 
 This repo is the `voc-logistics-judgment` Codex skill for browser-based logistics VOC evidence collection and nine-scenario not-received issue judgment.
 
+It also contains `write-business-docs` under `write-business-docs/`, a decision-oriented business writing skill for docs, reports, speeches, storylines, metric readouts, and consensus materials.
+
 ## Install In Codex
 
 After this repository is pushed to GitHub, colleagues can ask Codex:
@@ -29,6 +31,15 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
   --repo <owner>/<repo> \
   --path . \
   --name voc-logistics-judgment
+```
+
+To install the business writing skill from this repo:
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo main2marin-sys/marin-s-skills \
+  --path write-business-docs \
+  --name write-business-docs
 ```
 
 ## Clone Install Fallback
