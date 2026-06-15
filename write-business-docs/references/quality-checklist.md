@@ -44,6 +44,7 @@ Use this before delivering a draft, or when reviewing an existing document.
 - Remove subjective modifiers such as "significant", "very", "huge", and "obvious" unless quantified.
 - Explain jargon and abbreviations at first use.
 - Use plain language that a new colleague or non-expert can follow.
+- Format dates as `月.日`, such as `6.30`; do not add spaces before or after the date.
 
 ## Data And Chart Use
 

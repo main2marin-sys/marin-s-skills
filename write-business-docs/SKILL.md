@@ -70,3 +70,4 @@ When reviewing or rewriting an existing draft, lead with:
 - Every data point must support a business judgment.
 - Every meeting or decision doc must end with conclusion, owner, time, and next action.
 - Every speech or narrative must establish shared context before asking the audience to accept a new judgment.
+- Dates in Chinese business writing must use `月.日` format, such as `6.30`; do not add spaces before or after the date.
