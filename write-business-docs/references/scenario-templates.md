@@ -37,6 +37,38 @@ Let the audience quickly understand business health, main drivers, problems, dec
 - Do not report every workstream. Report the business.
 - Do not over-drill into details most readers cannot act on.
 - Highlight problem points and decision points; routine smooth progress can be compressed.
+- For project progress speech notes, use a four-part sequence: supply/product progress, user experience effect, business result, offline or qualitative validation plus next action.
+- In speech notes, use clear transitions such as "第一", "第二", "第三", and "最后"; keep each part to one conclusion plus the minimum data needed to prove it.
+- When a metric moves from a baseline, prefer delta wording when it is easier to speak, such as `提升13.4pp`, and include absolute before/after only when the audience needs the base.
+- For qualitative walk-through findings, separate "good user value" from "offline operating reality": first state what user need is satisfied, then state what real-world conditions create uncertainty.
+- Describe offline issues as observed operating conditions, not blame. Prefer "线下经营状态复杂，会增加用户寻站和成功寄件的不确定性" over "体验很差" or direct attribution to a team.
+- End by naming the next internal alignment or optimization points, not only "持续观察".
+
+### Project Progress Speech Pattern
+
+Use this when turning bullet-point progress into a short spoken update for leadership.
+
+1. **Opening**
+   - "我同步下<项目>进展，主要有<三/四>个部分。"
+   - State the top-line conclusion only if it helps the audience orient.
+
+2. **Progress**
+   - Supply or capability progress: what has been completed, current scale, rollout percentage, and whether there are anomalies.
+   - Keep source split only when it explains the business result; otherwise aggregate.
+
+3. **User experience effect**
+   - Use distance, coverage, success rate, or other user-facing metrics.
+   - Translate the metric into plain user value, such as "用户离可用寄件点更近".
+
+4. **Business result**
+   - Explain how supply or product changes affect user choice, conversion, cost, or channel mix.
+   - Avoid overclaiming causality when the evidence is a gray release; say what the current result indicates.
+
+5. **Qualitative validation and next action**
+   - State what field research or offline validation confirmed.
+   - For good findings, name the user need satisfied.
+   - For problems, name the operating reality observed and its impact on user uncertainty.
+   - Close with this week's alignment/output: optimization points, launch gate, governance rule, or decision.
 
 ## Key Issue Or Consensus Material
 
@@ -209,4 +241,3 @@ Use metrics to understand business operation, validate whether the operating log
 - Do not combine unrelated data into compound metrics.
 - Do not force attribution when multiple factors changed.
 - A dashboard succeeds when it solves most recurring business questions with a clear operating logic.
-

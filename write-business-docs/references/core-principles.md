@@ -95,7 +95,19 @@ Decision-oriented docs must name:
 
 If there is no option, no factor, or no owner, the doc is not yet decision-ready.
 
-## 9. Build Consensus Into Reusable Principles
+## 9. Describe Problems Without Over-Attributing
+
+When reporting field research, offline walk-throughs, user interviews, or operations findings, separate observed facts from ownership judgment.
+
+Use:
+
+- Observed condition: what happened offline or in the user path.
+- User impact: what uncertainty, cost, or failure it creates.
+- Next action: what internal alignment or optimization will address it.
+
+Avoid turning observations into premature blame. For example, write "线上可选驿站实际停业、地址误差、无人值守等线下经营情况，会增加用户寻站和成功寄件的不确定性" instead of "产品体验差" or "服务商问题严重" unless responsibility has been validated.
+
+## 10. Build Consensus Into Reusable Principles
 
 For key issue or discussion materials, the final output should not be only meeting notes. Convert discussion into:
 
@@ -108,7 +120,7 @@ For key issue or discussion materials, the final output should not be only meeti
 
 The highest-quality consensus docs let later teams apply the same principles without re-litigating the whole discussion.
 
-## 10. Compress Expression
+## 11. Compress Expression
 
 Every sentence should earn its space.
 
@@ -118,4 +130,3 @@ Every sentence should earn its space.
 - Explain jargon at first use.
 - Remove vague modifiers, filler phrases, and repeated context.
 - One chart or table should tell one story.
-
