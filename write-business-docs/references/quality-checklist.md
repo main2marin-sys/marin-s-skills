@@ -21,9 +21,20 @@ Use this before delivering a draft, or when reviewing an existing document.
 
 ## Logic
 
+- Every material source scenario, constraint, metric, risk, current capability, and planned action is accounted for in the final draft.
+- For every source sentence containing multiple conditions joined by "and", "or", `/`, `及`, `和`, or `或`, the shared action has been tested against each condition separately.
+- Mutually exclusive branches use explicit parallel scope markers; no broad leading action can be misread as applying to an incompatible exception.
 - The structure follows business logic, not department ownership.
 - The current state, problem, drivers, and next action are connected.
 - The document distinguishes facts, judgments, assumptions, and recommendations.
+- Every proposed action is feasible under the stated condition and uses information that is actually available.
+- Normal and abnormal scenarios, mutually exclusive stages, and different user states are separated rather than merged.
+- Current capabilities and planned capabilities are explicitly distinguished.
+- Time windows, subjects, populations, denominators, channels, and metric scopes remain consistent within each claim.
+- Category-level changes are not presented as total-business changes without supporting reconciliation.
+- Headings do not claim more than the body evidence proves.
+- Missing, stale, or unknown information is not described as exact, current, or latest.
+- No material user-provided scenario, constraint, metric, or risk was silently removed to make the prose appear consistent.
 - If the document seeks a decision, it includes options and decision factors.
 - If the document seeks consensus, it converts discussion into principles and best practices.
 
@@ -65,6 +76,9 @@ Use this before delivering a draft, or when reviewing an existing document.
 
 - Replace topic headings with claim headings.
 - Move conclusion to the front.
+- Rewrite each major claim as `condition/state -> evidence -> action -> expected result`, then check every arrow.
+- Split contradictory scenarios into separate branches before compressing the language.
+- Preserve conflicting inputs as separate branches or explicit open issues; never fix logic by quietly deleting them.
 - Delete routine progress with no problem or decision point.
 - Collapse repeated context into one sentence.
 - Turn qualitative claims into numbers or examples.

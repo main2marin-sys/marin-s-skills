@@ -130,3 +130,22 @@ Every sentence should earn its space.
 - Explain jargon at first use.
 - Remove vague modifiers, filler phrases, and repeated context.
 - One chart or table should tell one story.
+
+## 12. Run A Contradiction Pass
+
+Fluent wording must not hide incompatible logic. Before finalizing, test every major statement:
+
+- **State and action:** Can the proposed action work in the stated condition?
+- **Information availability:** Does the output rely on data the premise says is missing, stale, or unknown?
+- **Scenario boundary:** Are normal and abnormal states, or mutually exclusive fulfillment stages, mixed together?
+- **Time and capability:** Is a planned capability written as if it already exists?
+- **Metric scope:** Is a category-level movement being presented as a total-business result?
+- **Evidence and conclusion:** Does the evidence prove the claim, or only suggest a hypothesis?
+
+Split conflicting scenarios instead of forcing them into one sentence. For example:
+
+- Normal progress inquiry: show the current known node and predicted next arrival time.
+- Tracking has not updated: state that the trajectory is stale or abnormal and provide an exception-handling path.
+
+Do not write "tracking has not updated, so show the latest logistics node" unless another source actually provides a fresher node.
+Do not make the contradiction disappear by dropping the stale-tracking scenario. Preserve every material user-provided scenario; split it, flag it as unresolved, or request the specific missing input needed to make the logic executable.

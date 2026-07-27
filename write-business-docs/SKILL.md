@@ -37,12 +37,29 @@ Prefer a demand-side view over a supply-side view. Start from who will read, wha
    - Do not use a pile of numbers to explain another number. Tie metric movement back to user behavior, business actions, funnel logic, or explicit uncertainty.
    - When attribution is uncertain, say what is known, what is suspected, and what will be checked next.
 
-5. **Write for decisions**
+5. **Run the logic consistency gate**
+   - Before rewriting, make an internal coverage inventory of every material source scenario, constraint, metric, risk, current capability, and planned action. After drafting, verify that each item is preserved, deliberately reframed without changing its meaning, or explicitly marked unresolved.
+   - For any sentence where multiple conditions are joined by "and", "or", `/`, `及`, `和`, or `或` but share one action, test the action against each condition separately. If the action does not work for every condition, split the conditions into separate branches.
+   - Express mutually exclusive branches with explicit parallel scope markers such as "for normal orders..." and "for stale-tracking orders...". Do not place a broad leading action before an exception clause if grammar could make that action apply to the exception.
+   - Map every major statement as `condition/state -> evidence -> action -> expected result`. Confirm that each action is possible under the stated condition and that the evidence supports the conclusion.
+   - Separate mutually exclusive states, stages, audiences, time windows, and scopes into distinct branches. Do not merge normal and abnormal scenarios into one sentence.
+   - Never propose an output that depends on information the premise says is missing or unavailable. For example, if tracking has not updated, do not claim to show the latest logistics node; distinguish normal progress inquiries from stale-tracking exceptions and give each a feasible response.
+   - Do not resolve a contradiction by silently deleting a user-provided scenario, constraint, metric, or risk. Preserve it as a separate branch, or explicitly state that the current material does not provide a feasible response and identify the missing input.
+   - Distinguish current capability from planned capability, observed fact from inference, and category-level metric movement from total metric movement.
+   - If any contradiction remains, rewrite the logic before polishing the wording.
+
+   Example:
+   - Source: "When tracking has not updated or the user asks about normal progress, show the latest node."
+   - Invalid compression: "For in-transit orders, show the latest node." This silently drops the stale-tracking scenario.
+   - Still ambiguous: "For in-transit orders, show the latest node; when tracking is stale, provide a follow-up." The first clause can still read as applying to stale orders.
+   - Valid split: "For normal progress inquiries, show the current known node and predicted next arrival. For stale-tracking orders, state the exception and provide a follow-up or escalation path."
+
+6. **Write for decisions**
    - Put conclusions first, then explanation, then evidence, then next actions.
    - Include concrete options, decision factors, owners, timelines, and required support when the doc asks for a decision.
    - For consensus docs, end with principles and best practices that can guide later work.
 
-6. **Polish with the house style**
+7. **Polish with the house style**
    - Read `references/core-principles.md` when shaping the logic.
    - Read `references/quality-checklist.md` before finalizing or reviewing.
    - Prefer direct, quantified, low-jargon sentences. Remove subjective adjectives unless supported by data or examples.
@@ -68,6 +85,7 @@ When reviewing or rewriting an existing draft, lead with:
 - The document must answer "so what" for every major section.
 - Every important claim must have evidence or a clearly marked assumption.
 - Every data point must support a business judgment.
+- Every problem, condition, and proposed action must be logically compatible; do not trade correctness for brevity or fluency.
 - Every meeting or decision doc must end with conclusion, owner, time, and next action.
 - Every speech or narrative must establish shared context before asking the audience to accept a new judgment.
 - Dates in Chinese business writing must use `月.日` format, such as `6.30`; do not add spaces before or after the date.
