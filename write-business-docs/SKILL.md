@@ -11,6 +11,16 @@ Write like the document is a product: understand the user, clarify the job to be
 
 Prefer a demand-side view over a supply-side view. Start from who will read, what they need to decide or understand, and what action should happen after reading. Use supply-side organization only for internal operating reviews where exhaustive inspection matters.
 
+## Mandatory Concreteness Gate
+
+Before drafting or polishing, scan every major solution claim for a specific actor and action.
+
+- If a source names a problem category and an abstract solution but provides no concrete mechanism for any representative scenario, **stop before producing a polished rewrite**.
+- Ask one to three minimum, targeted questions that recover the missing mechanism. State why the answers are necessary to explain how the problem is actually solved.
+- Do not satisfy the request by repeating the abstract phrase in cleaner language.
+- This gate applies even when the user asks for a short or leadership-level version. Seniority changes the amount of detail, not the need for a real mechanism.
+- If the user explicitly requests a best-effort draft without providing the missing information, use visible placeholders such as `[待补充：用户看到什么/平台执行什么]`; do not invent behavior.
+
 ## Workflow
 
 1. **Clarify expectation and target decision**
@@ -37,7 +47,19 @@ Prefer a demand-side view over a supply-side view. Start from who will read, wha
    - Do not use a pile of numbers to explain another number. Tie metric movement back to user behavior, business actions, funnel logic, or explicit uncertainty.
    - When attribution is uncertain, say what is known, what is suspected, and what will be checked next.
 
-5. **Run the logic consistency gate**
+5. **Make every solution concrete**
+   - Treat phrases such as "standardized solution", "capability building", "optimize experience", "strengthen collaboration", "improve efficiency", "platformization", and "form a closed loop" as placeholders, not finished writing.
+   - For every major solution claim, answer: what specific user or business problem occurs, under what condition it is identified, what the product/platform/team actually does, what the user or operator receives, and which result should change.
+   - In leadership materials, use the minimum detail needed for judgment: usually one to three representative scenarios are enough, but each scenario must state `problem/trigger -> concrete action -> user or business value`.
+   - Do not invent product behavior, workflow, or data that the source does not provide. If the material contains only an abstract label and the missing mechanism is necessary to make the logic credible, pause drafting and ask for the smallest set of concrete inputs. State why each input is needed.
+   - Ask targeted questions such as: "For a stale-tracking order, what does the user see or do?", "For a signed-but-not-received order, which information or action is provided?", or "When self-service fails, is the next step a work order, customer service, or another path?" Do not ask for unrelated context.
+
+   Example:
+   - Too vague: "Provide standardized solutions for progress inquiries and signed-but-not-received issues."
+   - Concrete: "For normal in-transit progress inquiries, show the current known node and predicted next arrival. For signed-but-not-received orders, show available delivery evidence and provide the verified follow-up path."
+   - Insufficient source: If the source does not say what is shown or what follow-up exists, ask for those two details and explain that they are required to describe how the problem is actually solved.
+
+6. **Run the logic consistency gate**
    - Before rewriting, make an internal coverage inventory of every material source scenario, constraint, metric, risk, current capability, and planned action. After drafting, verify that each item is preserved, deliberately reframed without changing its meaning, or explicitly marked unresolved.
    - For any sentence where multiple conditions are joined by "and", "or", `/`, `及`, `和`, or `或` but share one action, test the action against each condition separately. If the action does not work for every condition, split the conditions into separate branches.
    - Express mutually exclusive branches with explicit parallel scope markers such as "for normal orders..." and "for stale-tracking orders...". Do not place a broad leading action before an exception clause if grammar could make that action apply to the exception.
@@ -54,12 +76,12 @@ Prefer a demand-side view over a supply-side view. Start from who will read, wha
    - Still ambiguous: "For in-transit orders, show the latest node; when tracking is stale, provide a follow-up." The first clause can still read as applying to stale orders.
    - Valid split: "For normal progress inquiries, show the current known node and predicted next arrival. For stale-tracking orders, state the exception and provide a follow-up or escalation path."
 
-6. **Write for decisions**
+7. **Write for decisions**
    - Put conclusions first, then explanation, then evidence, then next actions.
    - Include concrete options, decision factors, owners, timelines, and required support when the doc asks for a decision.
    - For consensus docs, end with principles and best practices that can guide later work.
 
-7. **Polish with the house style**
+8. **Polish with the house style**
    - Read `references/core-principles.md` when shaping the logic.
    - Read `references/quality-checklist.md` before finalizing or reviewing.
    - Prefer direct, quantified, low-jargon sentences. Remove subjective adjectives unless supported by data or examples.
@@ -76,6 +98,7 @@ When drafting from scratch, provide:
 When reviewing or rewriting an existing draft, lead with:
 
 - The largest logic or decision risks.
+- If the mandatory concreteness gate fails, ask the minimum missing mechanism questions before providing a polished replacement draft.
 - A revised storyline or heading structure.
 - A polished replacement draft or targeted rewrites.
 - A final checklist result.
@@ -85,6 +108,7 @@ When reviewing or rewriting an existing draft, lead with:
 - The document must answer "so what" for every major section.
 - Every important claim must have evidence or a clearly marked assumption.
 - Every data point must support a business judgment.
+- Every major solution must name at least one concrete problem, trigger, action, and user or business value; abstract labels alone are not acceptable.
 - Every problem, condition, and proposed action must be logically compatible; do not trade correctness for brevity or fluency.
 - Every meeting or decision doc must end with conclusion, owner, time, and next action.
 - Every speech or narrative must establish shared context before asking the audience to accept a new judgment.

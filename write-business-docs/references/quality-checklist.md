@@ -10,6 +10,7 @@ Use this before delivering a draft, or when reviewing an existing document.
 - The doc uses a demand-side structure unless the context requires an internal supply-side review.
 - The scope is clear: what is included, excluded, and deferred.
 - Any request for more user input is necessary for a smoother argument, clearer decision path, stronger evidence, or better audience fit; the reason for asking is stated plainly.
+- If a major solution has no concrete actor/action for any representative scenario, drafting stopped and one to three minimum mechanism questions were asked.
 
 ## Storyline
 
@@ -37,6 +38,15 @@ Use this before delivering a draft, or when reviewing an existing document.
 - No material user-provided scenario, constraint, metric, or risk was silently removed to make the prose appear consistent.
 - If the document seeks a decision, it includes options and decision factors.
 - If the document seeks consensus, it converts discussion into principles and best practices.
+
+## Concreteness
+
+- Every abstract solution label is unpacked into at least one representative problem, trigger, concrete action, and user or business value.
+- Phrases such as "standardized solution", "capability building", "optimize experience", "strengthen collaboration", and "form a closed loop" are not used as substitutes for mechanisms.
+- The draft states what the product, platform, team, merchant, service provider, or user actually does.
+- The fallback path is stated when the primary action may not solve the problem and that fallback matters to the judgment.
+- Leadership-level compression removes implementation detail, not the core problem-solving mechanism.
+- Missing mechanism details are requested explicitly rather than invented; each request explains which part of the logic it will complete.
 
 ## Evidence
 
@@ -76,6 +86,8 @@ Use this before delivering a draft, or when reviewing an existing document.
 
 - Replace topic headings with claim headings.
 - Move conclusion to the front.
+- Replace abstract solution labels with `problem/trigger -> concrete action -> value`.
+- If the source lacks the concrete action, ask for the minimum missing mechanism before drafting.
 - Rewrite each major claim as `condition/state -> evidence -> action -> expected result`, then check every arrow.
 - Split contradictory scenarios into separate branches before compressing the language.
 - Preserve conflicting inputs as separate branches or explicit open issues; never fix logic by quietly deleting them.

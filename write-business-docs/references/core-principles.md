@@ -149,3 +149,19 @@ Split conflicting scenarios instead of forcing them into one sentence. For examp
 
 Do not write "tracking has not updated, so show the latest logistics node" unless another source actually provides a fresher node.
 Do not make the contradiction disappear by dropping the stale-tracking scenario. Preserve every material user-provided scenario; split it, flag it as unresolved, or request the specific missing input needed to make the logic executable.
+
+## 13. Replace Abstract Solutions With Mechanisms
+
+Abstract labels do not explain a solution. Words such as "standardized", "intelligent", "platformized", "closed loop", "enhance", "optimize", and "empower" must be unpacked.
+
+For each major solution, identify:
+
+- The specific problem or user state.
+- The trigger or judgment condition.
+- The concrete information, product action, workflow, or service provided.
+- The fallback when the primary action cannot solve the problem.
+- The user or business result expected to change.
+
+For leadership communication, one to three representative mechanisms are usually sufficient. Do not list every rule, but do not replace mechanisms with category names.
+
+If the source only says "provide a standardized solution" and does not describe the mechanism, do not fabricate one. Ask only for the missing details needed to make the sentence executable, and explain why they matter to the storyline.
