@@ -39,7 +39,9 @@ Let the audience quickly understand business health, main drivers, problems, dec
 - Highlight problem points and decision points; routine smooth progress can be compressed.
 - For project progress speech notes, use a four-part sequence: supply/product progress, user experience effect, business result, offline or qualitative validation plus next action.
 - In speech notes, use clear transitions such as "第一", "第二", "第三", and "最后"; keep each part to one conclusion plus the minimum data needed to prove it.
-- When a metric moves from a baseline, prefer delta wording when it is easier to speak, such as `提升13.4pp`, and include absolute before/after only when the audience needs the base.
+- Keep exact metric values in the written material. In speech notes, do not repeat numbers that are already visible unless the value is decision-critical, surprising, or likely to be questioned.
+- Match spoken metric language to both effect size and statistical evidence: use `大幅提升/明显下降` when the business magnitude is genuinely large; use `显著正向/显著下降` when the change is statistically significant but the exact value is not worth reading aloud; use `趋势正向/阶段表现正向` when statistical significance has not been reached.
+- Do not use `显著` as a synonym for a large change. If a metric is worth reading aloud, prefer delta wording such as `提升13.4pp`, and include absolute before/after only when the audience needs the baseline.
 - For qualitative walk-through findings, separate "good user value" from "offline operating reality": first state what user need is satisfied, then state what real-world conditions create uncertainty.
 - Describe offline issues as observed operating conditions, not blame. Prefer "线下经营状态复杂，会增加用户寻站和成功寄件的不确定性" over "体验很差" or direct attribution to a team.
 - End by naming the next internal alignment or optimization points, not only "持续观察".

@@ -53,6 +53,8 @@ Use this before delivering a draft, or when reviewing an existing document.
 - Important claims have evidence.
 - Data has denominator, time window, comparison, and clear scope where relevant.
 - Metric movement uses concrete format such as `A -> B (+x%)`.
+- Written material retains the exact metric evidence; speech notes repeat exact values only when they materially affect the audience's judgment or are likely to be questioned.
+- Spoken magnitude labels match the evidence: `大幅/明显` describes business magnitude, `显著` describes statistical significance, and `趋势正向/阶段正向` is used when significance has not been reached.
 - Causal attribution is supported by business logic, user behavior, or explicit tests.
 - Uncertain attribution is labeled as hypothesis, not conclusion.
 - User research or feedback is interpreted with behavior and context, not accepted at face value.
