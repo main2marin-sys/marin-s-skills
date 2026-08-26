@@ -1,5 +1,5 @@
 interface:
-  display_name: "Business Writing Playbook"
+  display_name: "写作佬"
   short_description: "Write decision-oriented docs, reports, and speeches"
   default_prompt: "Use $write-business-docs to turn this topic into a decision-oriented document, report, or speech."
 policy:
