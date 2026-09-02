@@ -68,6 +68,11 @@ Before drafting or polishing, scan every major solution claim for a specific act
    - Never propose an output that depends on information the premise says is missing or unavailable. For example, if tracking has not updated, do not claim to show the latest logistics node; distinguish normal progress inquiries from stale-tracking exceptions and give each a feasible response.
    - Do not resolve a contradiction by silently deleting a user-provided scenario, constraint, metric, or risk. Preserve it as a separate branch, or explicitly state that the current material does not provide a feasible response and identify the missing input.
    - Distinguish current capability from planned capability, observed fact from inference, and category-level metric movement from total metric movement.
+   - Name the object whose status changed. A solution, experiment, or rollout reaching full traffic does not mean the underlying problem is fully resolved. If residual cases remain, write `首轮方案已全量` or `治理取得阶段进展`, not `问题完成全量治理`.
+   - Match outcome strength to the strongest supported claim and its exact population. If the evidence supports elimination within a defined scope, say `清零` and name that scope; do not dilute it to `进一步降低`. If elimination is not supported, do not imply it.
+   - For metric shares, rates, and volumes, state the denominator or population that changes the business judgment. For multi-party cost, benefit, or responsibility claims, enumerate every material stakeholder and the relevant cost type instead of collapsing them into `业务侧` or omitting one party.
+   - Separate an established value premise from the uncertainty an experiment is designed to test. If a user need is already established, describe the experiment as testing the mechanism, incremental effect, or guardrails, not whether the need itself exists.
+   - When an observed difference has a plausible operating mechanism but no controlled validation, write the chain explicitly: `observed association -> mechanism evidence -> causal hypothesis -> experiment needed`. Use explanatory connectors such as `进一步核实发现` and `初步判断`, not a merely parallel connector such as `同时`; do not attribute the exact observed uplift to the mechanism before validation.
    - If any contradiction remains, rewrite the logic before polishing the wording.
 
    Example:

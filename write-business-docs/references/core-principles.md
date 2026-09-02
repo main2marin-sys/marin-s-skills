@@ -165,3 +165,21 @@ For each major solution, identify:
 For leadership communication, one to three representative mechanisms are usually sufficient. Do not list every rule, but do not replace mechanisms with category names.
 
 If the source only says "provide a standardized solution" and does not describe the mechanism, do not fabricate one. Ask only for the missing details needed to make the sentence executable, and explain why they matter to the storyline.
+
+## 14. Protect Claim Precision
+
+Business writing often becomes inaccurate by compressing different objects, scopes, or evidence levels into one sentence. Before finalizing a claim, check four boundaries:
+
+- **Completion object:** distinguish `solution developed`, `rollout at 100%`, `first-round governance complete`, and `problem fully resolved`. A completed rollout can coexist with residual problems.
+- **Outcome scope:** use the strongest supported result without changing its population. Say `clear to zero` only when the source supports zero for the named population; do not replace a supported zero with vague `further improvement`, and do not generalize a scoped zero to all cases.
+- **Stakeholder scope:** when claiming no additional cost, no impact, or shared value, name every material party and the cost type. Platform, user, merchant, service provider, and operator are not interchangeable.
+- **Experiment target:** distinguish the reason to act from what remains uncertain. An established user need is the premise; the experiment may test a product mechanism, causal effect, operational execution, or business guardrail.
+
+For causal language, use the evidence ladder:
+
+1. Observed difference or association.
+2. Verified operating mechanism.
+3. Causal hypothesis that links the mechanism to the difference.
+4. Controlled experiment or equivalent evidence that validates the incremental effect.
+
+A plausible mechanism makes the hypothesis more credible but does not by itself prove that the full observed difference was caused by that mechanism. Use connectors that reflect the relationship: `进一步核实发现` for mechanism evidence, `初步判断` for a causal hypothesis, and `实验验证` for the remaining uncertainty. Use `同时` only for genuinely parallel facts.

@@ -37,6 +37,9 @@ Let the audience quickly understand business health, main drivers, problems, dec
 - Do not report every workstream. Report the business.
 - Do not over-drill into details most readers cannot act on.
 - Highlight problem points and decision points; routine smooth progress can be compressed.
+- In progress titles, state whether the milestone belongs to the solution or the problem. Prefer `首轮方案已全量，剩余问题继续治理` when rollout is complete but residual cases remain.
+- Use exact result language within an exact scope: if the remaining scoped issue is expected to reach zero, say so; if only a reduction is supported, do not promise zero.
+- Frame experiments as `established need -> proposed mechanism -> uncertainty to validate -> result and guardrail metrics`. Do not make an already-established user need sound like the experiment itself.
 - For project progress speech notes, use a four-part sequence: supply/product progress, user experience effect, business result, offline or qualitative validation plus next action.
 - In speech notes, use clear transitions such as "第一", "第二", "第三", and "最后"; keep each part to one conclusion plus the minimum data needed to prove it.
 - Keep exact metric values in the written material. In speech notes, do not repeat numbers that are already visible unless the value is decision-critical, surprising, or likely to be questioned.

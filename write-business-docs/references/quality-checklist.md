@@ -31,7 +31,12 @@ Use this before delivering a draft, or when reviewing an existing document.
 - Every proposed action is feasible under the stated condition and uses information that is actually available.
 - Normal and abnormal scenarios, mutually exclusive stages, and different user states are separated rather than merged.
 - Current capabilities and planned capabilities are explicitly distinguished.
+- The sentence names what was completed: development, rollout, first-round governance, or full problem resolution. Residual cases are not hidden behind `已完成`.
 - Time windows, subjects, populations, denominators, channels, and metric scopes remain consistent within each claim.
+- Every percentage share or rate has the denominator needed to interpret its business importance.
+- Outcome wording matches the evidence: a supported scoped zero is stated as zero with its population, while unsupported elimination is not implied.
+- Multi-party cost, benefit, and responsibility claims include every material stakeholder and specify the relevant cost or impact.
+- The experiment tests the actual uncertainty; an established user need is not incorrectly reframed as the experiment question.
 - Category-level changes are not presented as total-business changes without supporting reconciliation.
 - Headings do not claim more than the body evidence proves.
 - Missing, stale, or unknown information is not described as exact, current, or latest.
@@ -56,6 +61,8 @@ Use this before delivering a draft, or when reviewing an existing document.
 - Written material retains the exact metric evidence; speech notes repeat exact values only when they materially affect the audience's judgment or are likely to be questioned.
 - Spoken magnitude labels match the evidence: `大幅/明显` describes business magnitude, `显著` describes statistical significance, and `趋势正向/阶段正向` is used when significance has not been reached.
 - Causal attribution is supported by business logic, user behavior, or explicit tests.
+- Observed association, operating mechanism, causal hypothesis, and validated incremental effect are kept distinct. A plausible mechanism does not automatically prove the exact observed uplift.
+- Connectors match the relationship: explanatory evidence is not joined with a merely parallel connector such as `同时`.
 - Uncertain attribution is labeled as hypothesis, not conclusion.
 - User research or feedback is interpreted with behavior and context, not accepted at face value.
 
